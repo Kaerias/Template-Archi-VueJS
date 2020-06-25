@@ -1,0 +1,156 @@
+.v-input.required label:not(.file-label)::before, .v-input.switch-required > .v-input__control > .v-input__slot > label::before {
+    content: '* ';
+    color: red;
+    margin-left: .5em;
+}
+
+.v-input.warning-input {
+  color: var(--v-warning-base) !important;
+  caret-color: var(--v-warning-base) !important;
+}
+.v-input.warning-input .v-label {
+  color: var(--v-warning-base) !important;
+}
+.v-input.warning-input .v-messages {
+  color: var(--v-warning-base) !important;
+}
+.v-input.info-input {
+  color: var(--v-info-base) !important;
+  caret-color: var(--v-info-base) !important;
+}
+.v-input.info-input .v-label {
+  color: var(--v-info-base) !important;
+}
+.v-input.info-input .v-messages {
+  color: var(--v-info-base) !important;
+}
+.v-input.info-input .v-label+input {
+  color: var(--v-info-base) !important;
+}
+
+.flex.error-group .v-toolbar {
+  background-color: var(--v-error-base) !important;
+  -webkit-text-fill-color: white;
+}
+
+.flex.error-group .formGroup {
+  border-left: 2px solid var(--v-error-base);
+  border-color: var(--v-error-base) !important;
+}
+
+.flex.error-group .v-group-messages {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  color: var(--v-error-base) !important;
+}
+
+.flex.info-group .v-toolbar {
+  background-color: var(--v-info-base) !important;
+}
+
+.flex.info-group .formGroup {
+  border-left: 2px solid var(--v-info-base);
+  border-color: var(--v-info-base) !important;
+}
+.flex.info-group .v-group-messages {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  color: var(--v-info-base) !important;
+}
+
+.flex.warning-group .v-toolbar {
+  background-color: var(--v-warning-base) !important;
+}
+
+.flex.warning-group .formGroup {
+  border: 2px solid var(--v-warning-base);
+  border-color: var(--v-warning-base) !important;
+}
+.flex.warning-group .v-group-messages {
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+  color: var(--v-warning-base) !important;
+}
+
+td[data-title] {
+  position: relative;
+  cursor: help;
+  border-bottom: 0.05rem dotted rgb(156, 156, 156);
+}
+
+th[data-title] {
+  position: relative;
+  cursor: help;
+}
+
+th[data-title]:hover::before,
+td[data-title]:hover::before {
+  content: attr(data-title);
+  position: absolute;
+  z-index: 1;
+  top: 26px;
+  display: block;
+  flex-direction: column;
+  padding: 3px 6px;
+  border-radius: 2px;
+  border: 1px solid #fff;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  white-space: pre-wrap;
+  width: 90%;
+}
+
+.theme--light.v-text-field.v-input--is-readonly > .v-input__control > .v-input__slot:before {
+  -o-border-image: repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.38) 0,
+      rgba(0, 0, 0, 0.38) 2px,
+      transparent 0,
+      transparent 4px
+    )
+    1 repeat;
+  border-image: repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.38) 0,
+      rgba(0, 0, 0, 0.38) 2px,
+      transparent 0,
+      transparent 4px
+    )
+    1 repeat;
+}
+
+.theme--dark.v-text-field.v-input--is-readonly > .v-input__control > .v-input__slot:before {
+  -o-border-image: repeating-linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.5) 0px,
+      rgba(255, 255, 255, 0.5) 2px,
+      transparent 2px,
+      transparent 4px
+    )
+    1 repeat;
+  border-image: repeating-linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.5) 0px,
+      rgba(255, 255, 255, 0.5) 2px,
+      transparent 2px,
+      transparent 4px
+    )
+    1 repeat;
+}
+
+.theme--dark.v-text-field > .v-input__control > .v-input__slot:before {
+  border-color: hsla(0, 0%, 100%, 0.7);
+}
+
+@media screen and (max-width: 720px) {
+  .parentContainer {
+    padding:0 !important;
+    margin:0
+  }
+}
+
+.col {
+  padding-top:3px !important;
+  padding-bottom:3px !important;
+}
