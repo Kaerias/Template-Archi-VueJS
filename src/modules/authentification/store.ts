@@ -13,7 +13,7 @@ export interface AuthentificationState {
 }
 
 const state: AuthentificationState = {
-    isLogged: true,
+    isLogged: !!window.localStorage.getItem('token') && !!savedUser,
     user: savedUser,
     isReset: true,
 };
